@@ -55,12 +55,12 @@
             <input type="text" id="name" name="name" placeholder="Nom">
             <label for="firstName"> Prénom:</label>
             <input type="text" name="firstName" id="firstName" placeholder="Prénom">
+            <label for="birth">Date de naisance:</label>
+            <input type="date" name="birth" id="birth"
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" placeholder="Amail">
             <label for="password">Mot de passe:</label>
             <input type="password" name="password" id="password" placeholder="Mot de passe">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message"></textarea>
             <label for="subject">Sujet:</label>
             <select id="subject" name="subject">
                 <option value="option1">☺</option>
@@ -79,8 +79,12 @@
                 <option value="4">4</option>
                 <option value="5+">5+</option>
             </select>
-            <label for="favoriteMeal">Plat préféré:</label>
-            <input name="favoriteMeal" id="favoriteMeal"
+            <label for="favoriteDish">Plat préféré:</label>
+            <input type="text" name="favoriteDish" id="favoriteDish" placeholder="Plat préféré">
+            <label for="favoriteBrand">Marque préféré:</label>
+            <input type="text" name="favoriteBrand" id="favoriteBrand" placeholder="Marque préféré">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="1"></textarea>
             <button type="submit">Soumettre</button>
         </fieldset>
     </form>
