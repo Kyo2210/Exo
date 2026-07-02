@@ -52,11 +52,15 @@
         <fieldset>
             <legend>Formulaire de contact</legend>
             <label for="name">Nom:</label>
-            <input type="text" id="name" name="name">
+            <input type="text" id="name" name="name" placeholder="Nom">
+            <label for="firstName"> Prénom:</label>
+            <input type="text" name="firstName" id="firstName" placeholder="Prénom">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Amail">
+            <label for="password">Mot de passe:</label>
+            <input type="password" name="password" id="password" placeholder="Mot de passe">
             <label for="message">Message:</label>
             <textarea id="message" name="message"></textarea>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
             <label for="subject">Sujet:</label>
             <select id="subject" name="subject">
                 <option value="option1">☺</option>
@@ -66,24 +70,38 @@
                 <option value="option5">♣</option>
                 <option value="option6">♠</option>
             </select>
+            <label for="offSpring">Nombre d'enfants:</label>
+            <select name="offSpring" id="offSprings">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5+">5+</option>
+            </select>
+            <label for="favoriteMeal">Plat préféré:</label>
+            <input name="favoriteMeal" id="favoriteMeal"
             <button type="submit">Soumettre</button>
         </fieldset>
     </form>
+    <form>
+
+    </form>
     <p>Veille technologique :</p>
     <ul>
-        <li><a href="https://daily.dev/">Daily dev</a></li>
-        <li><a href="https://thehackernews.com/">The Hacker News</a></li>
-        <li><a href="https://www.reddit.com/">Reddit</a></li>
-        <li><a href="https://fr.linkedin.com/">LinkedIn</a></li>
-        <li><a href="https://news.ycombinator.com/">Hacker News</a></li>
+        <li><a href="https://daily.dev/" target="_blank">Daily dev</a></li>
+        <li><a href="https://thehackernews.com/" target="_blank">The Hacker News</a></li>
+        <li><a href="https://www.reddit.com/" target="_blank">Reddit</a></li>
+        <li><a href="https://fr.linkedin.com/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://news.ycombinator.com/" target="_blank">Hacker News</a></li>
     </ul>
 <p>Films :</p>
 <img src = "assets/alita.jpg" alt = "Alita" title = "Alita" width = "221" height = "300">
 <img src = "assets/mononoke.jpg" alt = "Mononoke" title = "Mononoke" width = "200" height = "300">
 <img src = "assets/wildRobot.jpg" alt = "Wild Robot" title = "Wild Robot" width = "200" height = "300">
 <p>Lien :</p>
-<a href="https://example.com/">Exemple</a>
-<a href="https://wikigacha.com/?lang=FR">Wikigacha</a>
-<a href="https://pokedle.net/">Pokedle</a>
+<a href="https://example.com/" target="_blank">Exemple</a>
+<a href="https://wikigacha.com/?lang=FR" target="_blank">Wikigacha</a>
+<a href="https://pokedle.net/" target="_blank">Pokedle</a>
 </body>
 </html>
