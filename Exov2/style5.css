@@ -1,0 +1,13 @@
+table {
+    border: double violet thick;
+    border-collapse: collapse;
+}
+
+td {
+    border: solid black 3px;
+}
+
+th {
+    border: solid black 3px;
+    background-color: aqua;
+}
