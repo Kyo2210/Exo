@@ -5,13 +5,16 @@ p {
 
 #paragraphe1 {
     height: 100px;
+    padding: 20px;
 }
 
 #paragraphe2 {
     width: 50%;
+    padding: 1.2em;
 }
 
 #paragraphe3 {
     height: 200px;
     width: 200px;
+    padding: -30px;
 }
