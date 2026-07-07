@@ -1,0 +1,17 @@
+p {
+    background: lightgray;
+    border: solid 3px green;
+}
+
+#paragraphe1 {
+    height: 100px;
+}
+
+#paragraphe2 {
+    width: 50%;
+}
+
+#paragraphe3 {
+    height: 200px;
+    width: 200px;
+}
