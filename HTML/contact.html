@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img id="premiere_image" src="https://picsum.photos/id/50/800/200" alt="Bannière">
+        <h1>Bienvenu sur mon site !</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Acceuil</a></li>
+                <li><a href=#article>Blog</a></li>
+                <li><a href="">Gallerie</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <form method="post">
+            <fieldset>
+                <legend>Contact</legend>
+                <div>
+                    <label for="name">Nom :</label>
+                    <label id="etoile" for="name">*</label>
+                    <input type="text" name="name" id="name" placeholder="Ex: Robert">
+                </div>
+                <div>
+                    <label for="email">Email :</label>
+                    <label id="etoile" for="email">*</label>
+                    <input type="text" name="email" id="email" required minlength="2" maxlength="20"
+                        placeholder="Ex : monMail@FAI.com">
+                </div>
+                <div>
+                    <label for="commentaire">Laisse un commentaire :</label>
+                    <textarea name="commentaire" id="commentaire" cols="70" rows="10"
+                        placeholder="Je dépose mon avis :)"></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" name="copie" id="copie" checked>
+                    <label for="copie">Envoyer une copue par E-mail !</label>
+                </div>
+                <div>
+                    <input type="submit" value="Envoyer">
+                    <input type="reset" value="Reset">
+                </div>
+            </fieldset>
+        </form>
+    </section>
+</body>
+
+</html>

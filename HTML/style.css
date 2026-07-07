@@ -1,7 +1,54 @@
+
+
+body {
+    background: radial-gradient(circle at top, #CCDAE0, #EDF2F4);
+    font-family: "Gill Sans Extrabold", sans-serif;
+}
+
+/* @font-face {
+    font-family: "Gill sans Extrabold";
+    font-weight: bold;
+    src: local("Gill sans Extrabold");
+} */
+
+header {
+        text-align: center;
+}
+
 ul {
     list-style-type: none;
 }
 
-body {
-    align-items: center;
+
+
+h1 {
+    color: #EF233C;
+}
+
+h2 {
+    color: #2B2D42;
+    text-decoration: underline dashed;
+    font-weight: bold;
+}
+
+article {
+    border: solid 1px black;
+}
+
+img:not(#premiere_image) {
+    display: block;
+    margin: auto;
+    border: solid 2px color(srgb red green blue) ;
+}
+
+form {
+    text-align: left;
+}
+
+#etoile {
+    color: red;
+}
+
+footer {
+    text-align: right;
 }
