@@ -1,7 +1,11 @@
 body {
     display: grid;
-    grid-template: min-content min-content 1fr / 1fr max-content
+    grid-template: min-content min-content 1fr / 1fr max-content;
 }
+
+/* body>* {
+    margin: 20px;
+} */
 
 h1 {
     grid-area: 1 / 1 / 1 / span 2;
@@ -10,9 +14,11 @@ h1 {
 
 h2 {
     padding: 1em;
+    margin: 0%;
+    padding-bottom: 0%;
 }
 
-p {
+#users p {
     text-align: left;
     padding: 1em;
 }
@@ -29,11 +35,9 @@ p {
 #users {
     border: solid 2px blue;
     border-radius: 1em;
-    width: fit-content;
-    height: fit-content;
     text-align: center;
     align-self: center;
-    margin: 10px;
+    margin: 50px;
 }
 
 .white {
@@ -60,7 +64,7 @@ form {
     margin: 10px;
 }
 
-form * {
+form *:not(#pseudo) {
     border-radius: 1em;
     padding: 0%;
 }
@@ -75,4 +79,7 @@ form * {
 
 #pseudo {
     grid-area: 1 / 2 / 1 / 2 ;
+    padding: 1em;
+    padding-top: 0%;
+    padding-bottom: 0%;
 }
