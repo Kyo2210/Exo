@@ -24,6 +24,7 @@
     background-color: rgb(84, 162, 84);
     grid-area: 2/1/2/1;
 }
+
 #text4 {
     background-color: rgb(88, 88, 209);
     grid-area: 2/2/2/2;
@@ -38,6 +39,7 @@
     background-color: rgb(84, 162, 84);
     grid-area: 2/1/span 2/1;
 }
+
 #text7 {
     background-color: rgb(88, 88, 209);
     grid-area: 2/3/2/3;
