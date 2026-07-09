@@ -1,0 +1,45 @@
+header {
+    text-align: center;
+    background-color: aquamarine;
+    margin: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: aquamarine;
+    margin: 10px;
+}
+
+section {
+    display: grid;
+    grid-template-columns: min-content min-content;
+    grid-auto-flow: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+article {
+    border: solid 1px black;
+    background-color: antiquewhite;
+    width: max-content;
+}
+
+article * {
+    padding: 10px;
+}
+
+@media only screen and (max-width: 1060px) {
+    body {
+        background-color: lightblue;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    article {
+        text-align: center;
+        width: auto;
+    }
+}
