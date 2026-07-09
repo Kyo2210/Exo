@@ -1,0 +1,162 @@
+body {
+    background-color: lightblue;
+    margin: 0px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+}
+
+main * {
+    border-radius: 20px;
+}
+
+header {
+    text-align: center;
+    background-color: lightgreen;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+nav {
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: lightgreen;
+    width: fit-content;
+    height: fit-content;
+    justify-self: center;
+}
+
+a {
+    padding: 10px;
+    margin: 2px;
+    color: lightblue;
+    background-color: black;
+    width: max-content;
+    height: fit-content;
+    border-radius: 20px;
+}
+
+a:hover {
+    color: black;
+    background-color: lightblue;
+}
+
+#center-section {
+    grid-column: 2;
+}
+
+article {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: lightgreen;
+    display: grid;
+    grid-template: fit-content fit-content/ max-content fit-content;
+}
+
+article * {
+    padding: 20px;
+}
+
+article :first-child {
+    grid-area: 1 / 1 / 1 / span 2;
+}
+
+article:nth-child(odd) :nth-child(2) {
+    grid-area: 2 / 1 / 2 / 1;
+}
+
+article:nth-child(even) :nth-child(2) {
+    grid-area: 2 / 2 / 2 /2;
+}
+
+article:nth-child(even) :nth-child(3) {
+    grid-area: 2 / 1 / 2 / 1;
+}
+
+article:nth-child(odd) :nth-child(3) {
+    grid-area: 2 / 2 / 2 / 2;
+}
+
+article p {
+    background-color: palegreen;
+    align-self: center;
+}
+
+#right-section {
+    grid-column: 3;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    background-color: lightgreen;
+    width: min-content;
+    height: min-content;
+    padding: 20px;
+}
+
+#right-section img {
+    width: min-content;
+    height: min-content;
+    margin-bottom: 20px;
+}
+
+footer {
+    display: flex;
+    background-color: lightgreen;
+    height: 70px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media screen and (max-width: 1648px) {
+    article {
+        display: flex;
+        flex-direction: column;
+    }
+
+    article:nth-child(even) :nth-child(2) {
+        order: 3;
+    }
+}
+
+@media screen and (max-width: 1130px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
+
+
+    nav {
+        grid-column: 1;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #center-section {
+        grid-column: 1;
+    }
+
+    #right-section {
+        grid-column: 1;
+    }
+}
+
+@media screen and (max-width: 630px) {
+
+    img {
+        height: auto;
+        width: 90%;
+    }
+
+    nav {
+        height: auto;
+        width: 65%;
+        justify-content: center;
+    }
+}
