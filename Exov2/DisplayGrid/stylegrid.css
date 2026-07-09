@@ -1,4 +1,4 @@
-#container {
+.container {
     width: 100%;
     height: 300px;
     border: red solid 5px;
@@ -53,4 +53,18 @@
 #text9 {
     background-color: rgb(84, 162, 84);
     grid-area: 2/1/span 2/1;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+@media only screen and (max-width: 1060px ) {
+    body {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
 }
